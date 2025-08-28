@@ -1,7 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+
+// Use env VITE_BASE from the GitHub Action for Pages
 export default defineConfig({
-  plugins: [react()],
+plugins: [react()],
+base: '/dr-screener/',
 })
